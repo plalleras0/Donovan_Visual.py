@@ -3,8 +3,10 @@ lastName= input("last name:")
 count= len(firstName + lastName)
 initials= lastName[0] + firstName[0]
 
-for firstName[0] in range() :
-    print(firstName)
+double_fname = ""
+for letter in firstName:
+    double_fname += letter + letter
+    
+revered_name = lastName[::-1]
 
-
-print (f"Hello {firstName} , {lastName} ! Your name has {count} letters, and your initials are {initials}. {doubleFirstName} , your name spelled backwards is <backwards last name>.")
+print (f"Hello {firstName} , {lastName} ! Your name has {count} letters, and your initials are {initials}. {double_fname} , your name spelled backwards is {revered_name}.")
