@@ -1,7 +1,9 @@
 print ("what is your firstname and lastname:")
 firstName =input()
 lastName =input()
-input = ("first_name , lastname")
-fullname= F'Hello, {firstName} {lastName}!'
-print(fullname)
-
+fullname1= f'Hello, {firstName} {lastName}!'
+fullnameh=(firstName , lastName)
+print(fullname1)
+str = 
+str_len = len(str)
+print(str_len)
