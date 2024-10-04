@@ -50,3 +50,32 @@ intergers [-1] = 30.5
 #print(intergers)
 #intergers.pop()
 #print(intergers)
+list_fruits=["lemon", "orange", "melon"]
+#pop , remove, del
+del list_fruits[1]
+#print(list_fruits)
+#list_fruits.append("MEGALOVANIA")
+#print(list_fruits)
+list_of_squares=[]
+for int in range(1,10):
+    square=int**2
+    list_of_squares.append(square)
+
+#print(list_of_squares)
+
+#[expresion for list in list if condition]
+square2=[int**2 for int in range(1,10)]
+
+#print(square2)
+
+#num=(1,2,3,4,5,6,7,8,9,10)
+#for num in num:
+    #print(num**3)
+    
+#pow(num,exp)
+
+#cubic = [num**3 for num in num ]
+list_of_number = (1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20)
+
+even_number = [num*2 for num in list_of_number if num%2 == 0]
+print(even_number)
