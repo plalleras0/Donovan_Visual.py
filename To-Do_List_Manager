@@ -45,6 +45,7 @@ def complete_task():
         print("wrong opcion, do you know how to write yes and no?")
            
 # Function to filter tasks containing a specific keyword using list comprehension
+[]sdvchvwsfhvsf
 #def filter_tasks(keyword):
 #TODO create a list comprehension variable to filter tasks containing a
     #specific keyword
