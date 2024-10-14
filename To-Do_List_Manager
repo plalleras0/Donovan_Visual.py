@@ -45,7 +45,12 @@ def complete_task():
         print("wrong opcion, do you know how to write yes and no?")
            
 # Function to filter tasks containing a specific keyword using list comprehension
-[]sdvchvwsfhvsf
+def key():
+    keyword=input("what you want to look for?")   
+    task=[task for task in todo_list if keyword in task]
+    print(task)
+
+    
 #def filter_tasks(keyword):
 #TODO create a list comprehension variable to filter tasks containing a
     #specific keyword
@@ -68,4 +73,4 @@ def main():
 #TODO create the if staments for the user.
 # Run the main function
         
-complete_task()
+key()
