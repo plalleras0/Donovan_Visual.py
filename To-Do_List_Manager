@@ -6,7 +6,8 @@ todo_list = ["Math homework", "Science project", "Read history book", "Practicep
 def display_todo_list():
     print(f"TO DO LIST:\n")
     for L in todo_list:
-        print(L)
+        print(L) 
+        
 
 # Function to add a new task
 def add_task():
@@ -50,17 +51,11 @@ def key():
     task=[task for task in todo_list if keyword in task]
     print(task)
 
-    
-#def filter_tasks(keyword):
-#TODO create a list comprehension variable to filter tasks containing a
-    #specific keyword
-   # filtered_tasks = []
-    #print(f"\nTasks containing '{keyword}':")
-    #print(filtered_tasks if filtered_tasks else "No tasks found.")
-# Main program
-# Main menu to choose options
+
+
 def main():
     while True:
+        print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
         print("\nTo-Do List Manager Menu")
         print("1. View To-Do List")
         print("2. Add Task")
@@ -69,8 +64,24 @@ def main():
         print("5. Complete First Task")
         print("6. Filter Tasks by Keyword")
         print("7. Exit")
-        choice = input("\nEnter your choice (1-7): ")
-#TODO create the if staments for the user.
-# Run the main function
-        
-key()
+        print("--------------------------------------------------")
+        choice = input("Enter your choice: ")
+        if choice == "1" :
+            display_todo_list()
+        elif choice == "2" :
+            add_task()
+        elif choice == "3" :
+            remove_task()
+        elif choice == "4" :
+            find_task()
+        elif choice == "5" :
+            complete_task()
+        elif choice == "6" :
+            key()
+        elif choice == "7" :
+            print()
+        else:   
+            print("wrong choice")       
+            
+    
+main()
