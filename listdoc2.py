@@ -50,8 +50,8 @@ intergers [-1] = 30.5
 #print(intergers)
 #intergers.pop()
 #print(intergers)
-list_fruits=["lemon", "orange", "melon"]
 #pop , remove, del
+list_fruits=["lemon", "orange", "melon"]
 del list_fruits[1]
 #print(list_fruits)
 #list_fruits.append("MEGALOVANIA")
