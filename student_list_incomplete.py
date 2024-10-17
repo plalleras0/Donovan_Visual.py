@@ -35,19 +35,15 @@ def pop_student():
 
 # Update a student's name in the list
 def update_student():
-    #TODO HINT: ask for the current name of the student
-    addName = input("what name do you want to add?")
-    #TODO Check if the student is in the list, then ask for the new name
-    if addName in student :
-        print("that name is already in the list")
-    else:
-        student.append(addName)
-        display_students()
-    #TODO Update the student's name in the list
-    #TODO If the student is not found, print an error message
-    #TODO display the updated list
-
-# Menu to manage student operations
+   Q = input("name:")
+   if Q in student :
+       index = student.index(Q)
+       q = input("new name:")
+       student[index]= q
+       display_students()
+   else :
+       print("not found")   
+       
 def menu():
     while True:
         print("\nMenu:")
