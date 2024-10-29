@@ -7,9 +7,9 @@ def load_contacts(filename):
             first_name = row[0]
             last_name = row[1]
             phone_number =row[2]
-            email = row[2]
+            email = row[3]
             contacts[last_name] = {first_name, phone_number, email}
-        return contacts
+    return contacts
 
 
 def display_coutact_info(contact_info):
@@ -23,12 +23,13 @@ def display_coutact_info(contact_info):
 
 
 def main():
-    filename = '/documents/csv.py/dic.csv/data'
+    filename = "dic.csv"
     
     contacts = load_contacts(filename)
     
     last_name = input('please enter a last name to look up:').strip()
-   
     contact_info = contacts.get(last_name)
+    
+    display_coutact_info(contact_info)
     
 main()    
